@@ -9,5 +9,10 @@ public class Main {
         list.add(1);
         int number = list.get(0);
         System.out.println("Here is the saved integer  : "+ number );
+
+        var t = new GenericsSample<Ticket>();
+        t.add(new Ticket());
+        Ticket tGet = t.get(0);
+        System.out.println("Here is the saved Ticket type object  : "+ tGet );
     }
 }
